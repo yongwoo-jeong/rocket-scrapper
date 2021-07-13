@@ -1,14 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
-page_count = 88
-URL = f"https://www.rocketpunch.com/jobs?career_type=1&job=1&page=1"
+driver = webdriver.Chrome('C:/Users/JYW/Desktop/chromedriver/chromedriver.exe')
+phantom = webdriver.PhantomJS(r'/Users/JYW/Desktop/phantomjs/phantomjs.exe')
 
-def get_last_page():
-    result = requests.get(URL)
-    soup = BeautifulSoup(result.text, "html.parser")
-    pagination = soup.find_all("div", {"class":"floated"})
-    #pages = pagination.find_all("a")
-    print(soup)
-
-get_last_page()
+driver.implicitly_wait(3)
+driver.get('https://www.rocketpunch.com/jobs?career_type=1&job=1&page=1')
+html = driver.page_source
+soup = BeautifulSoup(html, 'html.parser')
