@@ -19,6 +19,7 @@ def get_last_page():
     return last_page_number
 
 def extract_jobs(last_page):
+    jobs = []
     for page in range(1, last_page + 1):
         print(f"Scraping Rocket-Punch Jobs for Junior: page: {page}")
         driver.get(f'https://www.rocketpunch.com/jobs?career_type=1&job=1&page={page}')
@@ -26,19 +27,11 @@ def extract_jobs(last_page):
         for company_item in company_items:
             company = company_item.select_one('div.company-name > a > h4.name > strong').get_text()
             job = company_item.select_one('div.job-detail > div > a.job-title').get_text()
-            career_info = company_item.select_one('span.job-stat').get_text()
-            apply_link = company_item.select_one('div.job-detail > div > a')
-        '''
-        for company_item in company_items:
-            company = soup.select_one('div.company-name > a > h4.name > strong').get_text()
-            job = soup.select_one('div.job-detail > div > a.job-title').get_text()
-            print(company, job)
-        companies = soup.select('div.company-name > a > h4.name > strong')
-        for company in companies:
-            company = company.get_text()
-        jobs = soup.select('div.job-detail > div > a.job-title')
-        for job in jobs:
-            job = job.get_text()
-        '''
+            career_info = company_item.select_one('span.job-stat-info').get_text()
+            apply_link = company_item.select_one('div.job-detail > div > a')['href']
+            apply_link = f"https://www.rocketpunch.com{apply_link}"
+            jobs.append({'Company Name':company, 'Job':job, 'Career Info': career_info, 'Apply Link':apply_link})
+    print(jobs)
+
 
 extract_jobs(1)
