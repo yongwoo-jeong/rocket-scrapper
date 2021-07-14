@@ -8,5 +8,5 @@ def save_to_file(jobs):
     writer = csv.writer(file)
     writer.writerow(["회사명", "직무", "연봉/경력", "지원"])
     for job in jobs:
-        writer.writerow(list(job.value()))
+        writer.writerow(list(job.values()))
     return
