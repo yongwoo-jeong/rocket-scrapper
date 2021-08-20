@@ -1,0 +1,6 @@
+로켓펀치*.csv
+__pycache__/
+ghostdriver.log
+main.spec
+build/
+dist/
