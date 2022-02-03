@@ -26,3 +26,6 @@ https://phantomjs.org/
 ## Things "I" should read
 
 > "웹 크롤러 좀 그만 만들어라" https://velog.io/@mowinckel/웹-크롤링-I
+
+> "what is head?" https://url.kr/63ac5q  
+> https://subji.github.io/posts/2020/06/01/headless
