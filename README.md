@@ -18,6 +18,7 @@ https://phantomjs.org/
 
 ## Things to be done ✔
 
-- 저장 라이브러리 변경
-  - CSV -> pandas (\*셀 너비 문제)
-- 로켓펀치 검색 옵션 추가 기능
+- [x] 사이트 class명 변경에 따른 셀렉터 수정
+- [] 저장 라이브러리 변경
+  - [] CSV -> pandas (\*셀 너비 문제)
+- [] 로켓펀치 검색 옵션 추가 기능
