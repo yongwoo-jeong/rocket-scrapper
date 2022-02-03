@@ -22,3 +22,7 @@ https://phantomjs.org/
 - [] 저장 라이브러리 변경
   - [] CSV -> pandas (\*셀 너비 문제)
 - [] 로켓펀치 검색 옵션 추가 기능
+
+## Things "I" should read
+
+> "웹 크롤러 좀 그만 만들어라" https://velog.io/@mowinckel/웹-크롤링-I
