@@ -4,3 +4,8 @@ ghostdriver.log
 main.spec
 build/
 dist/
+websaver/
+venv/
+phantomjs/
+chromedriver.exe
+phantomjs.exe
