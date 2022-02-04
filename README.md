@@ -12,8 +12,8 @@ pip install beautifulsoup4
 
 ## 실행 환경
 
-크롬드라이버 & 팬텀js
-https://chromedriver.chromium.org/downloads
+크롬드라이버 & 팬텀js  
+https://chromedriver.chromium.org/downloads  
 https://phantomjs.org/
 
 ## Things to be done ✔
