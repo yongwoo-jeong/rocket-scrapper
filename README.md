@@ -14,7 +14,11 @@ pip install beautifulsoup4
 
 크롬드라이버 & 팬텀js  
 https://chromedriver.chromium.org/downloads  
-https://phantomjs.org/
+https://phantomjs.org/  
+
+## 결과  
+
+SW엔지니어🔧 신입 채용란 전체 CSV파일로 스크래핑
 
 ## Things to be done ✔
 
