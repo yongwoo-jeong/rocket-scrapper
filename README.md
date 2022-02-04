@@ -31,5 +31,5 @@ https://phantomjs.org/
 > "what is head?" https://url.kr/63ac5q  
 > https://subji.github.io/posts/2020/06/01/headless
 
-> "headless 브라우저란" "https://url.kr/nc2eli"
+> "headless 브라우저란" "https://url.kr/nc2eli"  
 > "PhantomJS is dead" https://url.kr/oepbjx
