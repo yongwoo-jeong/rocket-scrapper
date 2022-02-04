@@ -22,6 +22,7 @@ https://phantomjs.org/
 - [] 저장 라이브러리 변경
   - [] CSV -> pandas (\*셀 너비 문제)
 - [] 로켓펀치 검색 옵션 추가 기능
+- [] 텔레그램 알림 기능
 
 ## Things "I" should read
 
@@ -29,3 +30,5 @@ https://phantomjs.org/
 
 > "what is head?" https://url.kr/63ac5q  
 > https://subji.github.io/posts/2020/06/01/headless
+
+> "PhantomJS is dead" https://url.kr/oepbjx
